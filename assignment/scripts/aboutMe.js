@@ -1,10 +1,31 @@
 // REQUIRED FEATURES:
 // 1 - Create a variable called `firstName` and assign it the value of your first name
+let firstName = 'Edan';
 
 // 2 - Create a second variable called `lastName` and assign it the value of your last name
+let lastName = 'Schwartz';
+
+
 
 // 3 - Create a third variable called `fullName`, assign it the value of your first and last name
 // (remember, you already have variables for this, can you use those?)
+
+//let fullName = firstName + " " + lastName;  // string concatenation
+
+// Template String or Template Literal
+let fullName = `${firstName} ${lastName}`;  // variable interpolation
+
+console.log('fullName is', fullName);
+
+let direction = 'south';
+let city = 'Minneapolis';
+
+console.log(`
+    Hello everyone,
+    My name is ${firstName} ${lastName}
+
+    I grew up in the ${direction} side of ${city}
+`);
 
 // 4 - Console log the value of `fullName`
 
@@ -32,6 +53,17 @@
 
 // 14 - Create a compound conditional: if luckyNumber is 2 and adventurous is true,
 // console log "Roll the dice!"
+
+let luckyNumber = 14;   // Number
+let adventurous = true; // Boolean
+
+console.log('14 + 2', luckyNumber + 2);     /// 16
+
+
+if (luckyNumber = 14) {
+    console.log('Your lucky number is 14');
+}
+
 
 // 15 - Write a conditional that console logs "I can have more pets!" 
 //if the value of `pets` is less than the value of `allowedPets`,
